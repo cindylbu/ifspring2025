@@ -5,6 +5,12 @@ html{
 }
 /*set the whole page margin*/
 
+header{
+    background-color: rgba(218, 223, 229, 0.839);
+    
+    padding:5px;
+}
+
 .line{
     padding:5px;
     border-bottom: 1px solid navy;
@@ -15,14 +21,21 @@ body{
 }
 
 h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:navy;
     text-align:center;
 }
 
 h2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align:center;
     padding-bottom: 5px;
     margin-top:-10px;
+}
+
+h3{
+    text-align:center;
+    padding: 5px;
 }
 
 
