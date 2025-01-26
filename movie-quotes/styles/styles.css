@@ -1,0 +1,155 @@
+
+html{
+    margin: 50px;
+    margin-bottom: 100px;
+}
+/*set the whole page margin*/
+
+.line{
+    padding:5px;
+    border-bottom: 1px solid navy;
+}
+
+body{
+    background-color:aliceblue;
+}
+
+h1{
+    color:navy;
+    text-align:center;
+}
+
+h2{
+    text-align:center;
+    padding-bottom: 5px;
+    margin-top:-10px;
+}
+
+
+p {
+    padding: 10px; /*changing the padding of the text-width background (the box outside text)*/
+    margin-right: 10px; /*changing the distance to page outside the text background*/
+    margin-left: 30px;
+  }
+
+
+/*in-line text background for Peter*/
+p.peter{
+    margin-top: -10px;
+    margin-bottom: -10px;
+    text-indent:-40px;
+    
+
+    span{
+        background-color:rgb(81, 86, 125);
+        color:white;
+        text-transform: capitalize;
+        font-weight: bold;
+        padding: 5px; /*changing the padding of the text-width background (the box outside text)*/
+    }
+    /*in-line text width background set with "span"*/
+}
+
+/*in-line text background for Dana (same as Peter, change text background color*/
+p.dana{
+    margin-top: -10px;
+    margin-bottom: -10px;
+    text-indent:-40px;
+  
+    
+    span{
+        background-color:rgb(228, 190, 78);
+        color:black;
+        text-transform: capitalize;
+        font-weight: bold;
+        padding: 5px;
+    }
+   
+}
+
+p.mayor{
+    margin-top: -10px;
+    margin-bottom: -10px;
+    text-indent:-40px;
+  
+    
+    span{
+        background-color:rgb(228, 160, 78);
+        color:black;
+        text-transform: capitalize;
+        font-weight: bold;
+        padding: 5px;
+    }
+   
+}
+
+p.ray{
+    margin-top: -10px;
+    margin-bottom: -10px;
+    text-indent:-40px;
+  
+    
+    span{
+        background-color:rgb(206, 60, 60);
+        color:white;
+        text-transform: capitalize;
+        font-weight: bold;
+        padding: 5px;
+    }
+   
+}
+
+p.egon{
+    margin-top: -10px;
+    margin-bottom: -10px;
+    text-indent:-40px;
+  
+    
+    span{
+        background-color:rgb(94, 113, 100);
+        color:white;
+        text-transform: capitalize;
+        font-weight: bold;
+        padding: 5px;
+    }
+   
+}
+
+p.winston{
+    margin-top: -10px;
+    margin-bottom: -10px;
+    text-indent:-40px;
+  
+    
+    span{
+        background-color:rgb(113, 94, 101);
+        color:white;
+        text-transform: capitalize;
+        font-weight: bold;
+        padding: 5px;
+    }
+   
+}
+
+p.quote{
+    background-color:white;
+}
+
+.side{
+    margin-left:-10px;
+    margin-bottom: -2px;
+    font-style: italic;
+    color:gray;
+    background-color:transparent;
+    span{
+        background-color:transparent;
+    }
+}
+
+.author{
+    margin-top:-5px;
+    margin-right:-10px;
+    text-align:right;
+    font-style:italic;
+}
+
