@@ -1,0 +1,181 @@
+
+html{
+    margin: 30px;
+    margin-bottom: 100px;
+    background-color:rgb(248, 248, 248)
+}
+/*set the whole page margin*/
+
+/*
+header{
+    background-color:rgba(255, 229, 30, 0.703);
+}
+*/
+
+header{
+    padding-bottom:20px;
+    border-width:5px;
+    border-style:none;
+    border-bottom-style: double
+}
+
+#rcorners1 {
+    border-radius: 25px;
+    background: #0b0039;
+    padding: 20px; 
+    width: 250px;
+    height: auto;  
+
+    border: 8px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: double;
+    border-left-style: double;
+    
+  }
+
+#rcorners2{
+    /*create outline in box*/
+    outline:solid white 2px; 
+    outline-offset:-5px;
+
+    /*round the corner of the box*/
+    border-radius: 25px;
+    
+    /*set the distance from text to the border*/
+    padding: 20px; 
+
+    /*width and height depends on content*/
+    width: auto;
+    height: auto;
+    
+    /*set distance to the other boxes*/
+    margin: 10px;
+}
+
+/*
+#rcorners3{
+    border-radius: 25px;
+    
+    padding: 20px; 
+    padding-left:-100px;
+    width: 500px;
+    height: auto;
+    
+}
+*/
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(255, 233, 122);
+}
+
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:italic;
+    color:#0b0039;
+
+    margin-left: 10px;
+    padding-left:10px;
+  
+    padding-bottom:10px;
+    border-width:5px;
+    border-style:none;
+    border-bottom-style: double
+
+}
+
+h3{
+    font-size:130%;
+    padding: 30px; /*padding sets the distance from the border*/
+    text-align:center;
+    background-color:rgb(221, 221, 221)
+}
+
+h4{
+    font-size:105%;
+    color: #0b0039;
+    margin-left:50px;
+    margin-bottom:20px;
+    text-transform:uppercase;
+}
+
+/*only highlight the text-width*/
+h4 span{
+    background-color:rgb(255, 233, 122);
+    padding:8px;
+    border-style:none;
+    border-radius:5px; /*set the corder round*/
+    
+}
+
+/*change the leading of the content*/
+div.content{
+    line-height: 130%;
+}
+
+/*pre preserves new line in the code*/
+/*issue: now manually set the margin back, does the pre have large margin in its nature?*/
+pre{
+    
+    font-size:110%;
+    color:rgb(48, 102, 125);
+    margin-left:-30px;
+}
+
+hr{
+    margin:5px;
+}
+
+/*
+ul.none{
+    list-style-type:square;
+    list-style-position:outside;
+    
+    border-radius: 25px;
+    background: #ffe251;
+    padding: 30px; 
+    width: auto;
+    height: auto;  
+}
+*/
+
+
+/*put citation in italics (Wikepedia)*/
+cite{
+    font-style: italic;
+}
+
+/*try to set image responsive to the window*/
+.responsive{
+    max-width: 100%;
+    height:auto;
+    
+}
+
+
+img {
+    display: flex;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    width:260px;
+    height: 260px;
+
+    border-radius: 8px;
+    margin:10px;
+    margin-left:10px;
+    margin-top:30px;
+    object-fit: cover;
+    /*issue: cannot be responsive to window for the gap between pic and text box*/
+    /*issue: this manually set the image to the center but does not automatically do so, not know how to put center of the box*/
+    
+  }
+
+  .author{
+    margin-top:10px;
+    margin-right:5px;
+    text-align:right;
+    font-style:italic;
+}
+  
