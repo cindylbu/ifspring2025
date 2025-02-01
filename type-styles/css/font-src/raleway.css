@@ -1,0 +1,84 @@
+/* Raleway */
+.raleway-thin{
+    font-family: "raleway", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.raleway-thin-italic{
+    font-family: "raleway", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.raleway-extralight{
+    font-family: "raleway", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.raleway-extralight-italic{
+    font-family: "raleway", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.raleway-light{
+    font-family: "raleway", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.raleway-light-italic{
+    font-family: "raleway", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.raleway-regular{
+    font-family: "raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.raleway-italic{
+    font-family: "raleway", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.raleway-bold{
+    font-family: "raleway", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.raleway-bold-italic{
+    font-family: "raleway", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.raleway-extrabold{
+    font-family: "raleway", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.raleway-extrabold-italic{
+    font-family: "raleway", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.raleway-black{
+    font-family: "raleway", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.raleway-black-italic{
+    font-family: "raleway", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}

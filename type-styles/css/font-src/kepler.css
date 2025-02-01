@@ -1,0 +1,159 @@
+/* Kepler */
+
+.kepler-std-regular{
+    font-family: "kepler-std", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kepler-std-italic{
+    font-family: "kepler-std", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.kepler-std-bold{
+    font-family: "kepler-std", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.kepler-std-bold-italic{
+    font-family: "kepler-std", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.kepler-std-caption{
+    font-family: "kepler-std-caption", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kepler-std-italic-caption{
+    font-family: "kepler-std-caption", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.kepler-std-bold-caption{
+    font-family: "kepler-std-caption", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.kepler-std-bold-italic-caption{
+    font-family: "kepler-std-caption", serif;
+    font-weight: 700;
+    font-style: italic;   
+}
+
+.kepler-std-subhead{
+    font-family: "kepler-std-subhead", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.kepler-std-italic-subhead{
+    font-family: "kepler-std-subhead", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+.kepler-std-bold-subhead{
+    font-family: "kepler-std-subhead", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.kepler-std-bold-italic-subhead{
+    font-family: "kepler-std-subhead", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+.kepler-std-condensed-subhead{
+    font-family: "kepler-std-condensed-subhead", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+.kepler-std-condensed-italic-subhead{
+    font-family: "kepler-std-condensed-subhead", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+.kepler-std-bold-condensed-subhead{
+    font-family: "kepler-std-extended", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.kepler-std-bold-condensed-italic-subhead{
+    font-family: "kepler-std-condensed-subhead", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+.kepler-std-extended{
+    font-family: "kepler-std-extended", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.kepled-std-extended-italic{
+    font-family: "kepler-std-extended", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+.kepler-std-bold-extended{
+    font-family: "kepler-std-extended", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.kepler-std-bold-extended-italic{
+    font-family: "kepler-std-extended", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.kepler-std-extended-caption{
+    font-family: "kepler-std-extended-caption", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kepler-std-extended-italic-caption{
+    font-family: "kepler-std-extended-caption", serif;
+    font-weight: 400;
+    font-style: italic;
+    
+}
+
+
+.kepler-std-bold-extended-caption{
+    font-family: "kepler-std-extended-caption", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.kepler-std-bold-extended-italic-caption{
+    font-family: "kepler-std-extended-caption", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+

@@ -1,0 +1,292 @@
+<!-- Create an html page demonstrating basic type styling using one of the font faces referenced below. 
+ 
+Clearly indicate the typeface name and size in a summary at the top of the page, 
+
+then demonstrate possible values for each of the following five CSS properties with a sample sentence: font-weight, font-style, letter-spacing, text-transform, text-decoration.
+
+Place each sample on its own line. Include a label for the group that shows which css property the group demonstrates. Include a label for each line that shows which value is used. Style the whole page to present your samples cleanly and clearly. -->
+
+
+<!DOCTYPE html >
+<html lang="en">
+    <head>
+        <title>Type Styling Demonstration</title>
+        <meta charset="UTF-8">
+
+        <!-- stylesheet for all -->
+            <link href="css/styles.css" rel="stylesheet">
+
+        <!-- Adobe Typekit IFSpring2025 -->
+            <link rel="stylesheet" href="https://use.typekit.net/mcv2qtl.css">
+
+        <!--Google Fonts-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!--Raleway-->
+            <link href="css/font-src/raleway.css" rel="stylesheet">
+        <!--Kepler-->
+            <!-- <link href="css/font-src/kepler.css" rel="stylesheet"> -->
+    </head>
+
+    <body>
+        <header>
+            <div class="box-h1h2">
+                <h1>Type Styling Demonstration</h1>
+                
+                <h2>
+                    <div class="grid-container-header">
+                        <div class="item1">
+                            <span class="span-subtitle">Font-Family</span> <strong>Raleway</strong>
+                        </div>
+                        <div class="item2">
+                            <span class="span-subtitle">Font-Size</span> 
+                            <strong>Title: </strong>32pt
+                            <strong>;</strong>
+                            <strong>Subtitle: </strong>13pt
+                            <strong>;</strong>
+                            <strong>Section Title: </strong>13pt
+                            <strong>;</strong>
+                            <strong>Content: </strong>11pt
+                            <strong>;</strong></td>
+                        </div>
+                    </div>
+                    
+                </h2>
+                <!-- <h2>
+                    <strong class="extrabold">Font-Family:</strong> Raleway 
+                    <strong class="extrabold">| Font Size:</strong> 
+                        <strong class="bold">[title]</strong> 32pt
+                        <strong class="extrabold">;</strong> 
+                        <strong class="bold">[subtitle]</strong> 13pt
+                        <strong class="extrabold">;</strong> 
+                        <strong class="bold">[section title]</strong> 13pt
+                        <strong class="extrabold">;</strong> 
+                        <strong class="bold">[content]</strong>  11pt 
+                </h2> -->
+            </div>
+            <!-- <br> -->
+            <!-- <hr class="h1h2"> -->
+        </header>
+
+        <main>
+            <br>
+            
+            <section class="box-h3"> <!--black box-->
+                <h3><code>font-weight</code></h3>
+                <div style="overflow-x:auto;">
+                    <div class="box"> <!--grey box-->
+                        <table>
+                            <tr>
+                                <td class="raleway-thin"><span>Raleway Thin</span></td>
+                                <td class="raleway-thin">Every man dies, not every man really lives.</td>
+                            </tr>
+                            <tr>
+                                <td class="raleway-extralight"><span>Raleway ExtraLight</span></td>
+                                <td class="raleway-extralight">Every man dies, not every man really lives.</td>
+                            </tr>
+                            <tr>
+                                <td class="raleway-light"><span>Raleway Light</span></td>
+                                <td class="raleway-light">Every man dies, not every man really lives.</td>
+                            </tr>
+                            <tr>
+                                <td class="raleway-regular"><span>Raleway Regular</span></td>
+                                <td class="raleway-regular">Every man dies, not every man really lives.</td>
+                            </tr>
+                            <tr>
+                                <td class="raleway-bold"><span>Raleway Bold</span></td>
+                                <td class="raleway-bold">Every man dies, not every man really lives.</td>
+                            </tr>
+                            <tr>
+                                <td class="raleway-extrabold"><span>Raleway ExtraBold</span></td>
+                                <td class="raleway-extrabold">Every man dies, not every man really lives.</td>
+                            </tr>
+                            <tr>
+                                <td class="raleway-black"><span>Raleway Black</span></td>
+                                <td class="raleway-black">Every man dies, not every man really lives.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <br> <!--bottom gap between grey box and edge of black box-->
+            </section>
+
+            <br>
+
+            <section class="box-h3">
+                <h3><code>font-style</code></h3>
+                <div class="box">
+                    <table>
+                        <tr>
+                            <td class="raleway-thin-italic"><span>Raleway Thin Italic</span></td>
+                            <td class="raleway-thin-italic">Every man dies, not every man really lives.</td>
+                        </tr>
+                        <tr>
+                            <td class="raleway-extralight-italic"><span>Raleway ExtraLight Italic</span></td>
+                            <td class="raleway-extralight-italic"></tdclass>Every man dies, not every man really lives.</td>
+                        </tr>
+                        <tr>
+                            <td class="raleway-light-italic"><span>Raleway Light Italic</span></td>
+                            <td class="raleway-light-italic">Every man dies, not every man really lives.</td>
+                        </tr>
+                        <tr>
+                            <td class="raleway-italic"><span>Raleway Italic</span></td>
+                            <td class="raleway-italic">Every man dies, not every man really lives.</td>
+                        </tr>
+                        <tr>
+                            <td class="raleway-bold-italic"><span>Raleway Bold Italic</span></td>
+                            <td class="raleway-bold-italic">Every man dies, not every man really lives.</td>
+                        </tr>
+                        <tr>
+                            <td class="raleway-extrabold-italic"><span>Raleway ExtraBold Italic</span></td>
+                            <td class="raleway-extrabold-italic">Every man dies, not every man really lives.</td>
+                        </tr>
+                        <tr>
+                            <td class="raleway-black-italic"><span>Raleway Black Italic</span></td>
+                            <td class="raleway-black-italic">Every man dies, not every man really lives.</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <br>
+            </section>
+
+            <br>
+
+            <!-- Note: <div></div> need to be inside <td></td> for the non-span element; outside the 2<td></td>s will not work for the formatting -->
+
+            <section class="box-h3">
+                <h3><code>letter-spacing</code></h3>
+                <div class="box"> <!--grey box-->
+                    <table>
+                        <tr>
+                            <td class="raleway-regular"><span>Raleway Regular: normal</span></td>
+                            <td class="raleway-regular">Every man dies, not every man really lives.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="raleway-regular"><span>Raleway Regular: 2px</span></td>
+                            <td class="raleway-regular"><div class="letter-spacing-2px">Every man dies, not every man really lives.</div></td>
+                        </tr>
+
+                        <tr>
+                            
+                            <td class="raleway-regular"><span>Raleway Regular: 4px</span></td>
+                            <td class="raleway-regular"><div class="letter-spacing-4px">Every man dies, not every man really lives.</div></td>
+                        </tr>
+
+                        <tr>
+                            <td class="raleway-regular"><span>Raleway Regular: -0.2px</span></td> 
+                            <td class="raleway-regular"><div class="letter-spacing-neg-point-2px">Every man dies, not every man really lives.</div></td>
+                        </tr>
+
+                        <tr>
+                            <td class="raleway-regular"><span>Raleway Regular: -0.8px</span></td>
+                            <td class="raleway-regular"><div class="letter-spacing-neg-point-8px">Every man dies, not every man really lives.</div></td>
+                        </tr>
+
+                        <tr>
+                            <td class="raleway-regular"><span>Raleway Regular: 0.2em</span></td>
+                            <td class="raleway-regular"><div class="letter-spacing-point-2em">Every man dies, not every man really lives.</div></td>
+                        </tr>  
+
+                        <tr>
+                            <td class="raleway-regular"><span>Raleway Regular: 0.4em</span></td>
+                            <td class="raleway-regular"><div class="letter-spacing-point-4em">Every man dies, not every man really lives.</div></td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="raleway-regular"><span>Raleway Regular: 0.6em</span></td>
+                            <td class="raleway-regular"><div class="letter-spacing-point-6em">Every man dies, not every man really lives.</div></td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <br>
+
+            </section>
+
+            <br>
+
+            <section class="box-h3">
+                <h3><code>text-transform</code></h3>
+
+                <div class="box"> <!--grey box-->
+                    <table>      
+                        <tr>
+                            <td class="raleway-regular"><span class="span-2line">Raleway Regular: <br>none</span></td>
+                            <td class="raleway-regular"><div class="text-transform-none">Every man dies, not every man really lives.</div></td>
+                        </tr>
+
+                        <tr>
+                            <td class="raleway-regular"><span class="span-2line">Raleway Regular: capitalize</span></td>
+                            
+                            <td class="raleway-regular"><div class="text-transform-capitalize">Every man dies, not every man really lives.</div></td>
+                            </div>
+                        </tr>
+                                      
+                        <tr>
+                            <td class="raleway-regular"><span class="span-2line">Raleway Regular: uppercase</span></td>
+                            <td class="raleway-regular"><div class="text-transform-uppercase">Every man dies, not every man really lives.</td></div>
+                        </tr>
+                                    
+                        <tr>
+                            <td class="raleway-regular"><span class="span-2line">Raleway Regular: <br><!--line break here-->lowercase</span></td>
+                            <td class="raleway-regular"><div class="text-transform-lowercase">Every man dies, not every man really lives.</div></td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+            </section>
+
+            <br>
+
+            <section class="box-h3">
+                <h3><code>text-decoration</code></h3>
+
+                <div class="box"> <!--grey box-->
+                    <table>                       
+                        <tr>
+                            <td class="raleway-regular"><span class="span-2line">Raleway Regular: overline</span></td>
+                            
+                            <td class="raleway-regular"><div class="text-decoration-overline">Every man dies, not every man really lives.</div></td>
+                            </div>
+                        </tr>
+                                      
+                        <tr>
+                            <td class="raleway-regular"><span class="span-2line">Raleway Regular: underline</span></td>
+                            <td class="raleway-regular"><div class="text-decoration-underline">Every man dies, not every man really lives.</td></div>
+                        </tr>
+                                    
+                        <tr>
+                            <td class="raleway-regular"><span class="span-2line">Raleway Regular: <br><!--line break here-->line through</span></td>
+                            <td class="raleway-regular"><div class="text-decoration-line-through">Every man dies, not every man really lives.</div></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="raleway-regular"><span class="span-2line">Raleway Regular: overline underline</span></td>
+                            <td class="raleway-regular"><div class="text-decoration-overline-underline">Every man dies, not every man really lives.</div></td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+            </section>
+            
+ 
+            <br>
+            <br>
+        </main>
+
+
+        <footer>
+            <br>
+            <hr class="h1h2">
+            <br>
+            <p class="author">
+                <b>Designed by:</b> Interaction Foundation SP25, Cindy Bu
+            </p>
+        </footer>
+
+    </body>
+</html>

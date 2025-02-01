@@ -1,0 +1,67 @@
+/* Open Sans */
+
+.open-sans-light{
+    font-family: "open-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.open-sans-light-italic{
+    font-family: "open-sans", sans-serif;
+    font-weight: 300;
+    font-style: italic;    
+}
+
+.open-sans-regular{
+    font-family: "open-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.open-sans-italic{
+    font-family: "open-sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.open-sans-bold{
+    font-family: "open-sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.open-sans-bold-italic{
+    font-family: "open-sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.open-sans-extrabold{
+    font-family: "open-sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.open-sans-extrabold-italic{
+    font-family: "open-sans", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.open-sans-condensed-light{
+    font-family: "open-sans-condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.open-sans-condensed-light-italic{
+    font-family: "open-sans-condensed", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.open-sans-condensed-bold{
+    font-family: "open-sans-condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}

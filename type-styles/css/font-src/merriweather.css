@@ -1,0 +1,49 @@
+/* Merriweather */
+
+.merriweatherlight-regular{
+    font-family: "merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.merriweatherlight-italic{
+    font-family: "merriweather", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.merriweather-regular{
+    font-family: "merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.merriweather-italic{
+    font-family: "merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.merriweather-bold{
+    font-family: "merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.merriweather-bold-italic{
+    font-family: "merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.merriweatherultrabold-regular{
+    font-family: "merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.merriweatherultrabold-italic{
+    font-family: "merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+}
