@@ -3,6 +3,7 @@ html{
     font-family: "raleway", sans-serif;
     color:black;
     background-color: rgba(242, 202, 43, 0.8);
+    
 }
 
 .sticky {
@@ -12,18 +13,53 @@ html{
 
 .grid-container-header {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    align-content:space-around;
-    padding:10px
+    /* grid-template-columns: 120px 145px 100px 500px auto; */
+    /* grid-template-columns: 13% 16% 11% 65% auto; */
+    
+    grid-template-columns: 120px 135px 100px auto; 
+    
+    gap:5px;
+    justify-content:start;
+    align-items:center;
+    padding:10px;
+    /* height:30px; */
+    /* overflow-wrap:normal; */
   }
 
 .item1{
+    display:flex;
     grid-column: 1 / span 1;
+    justify-content: flex-start; 
+    align-items: center;
+    
+}
+
+.item1-2{
+    display:flex;
+    grid-column: 2/ span 1;
+    justify-content: flex-start; 
+    align-items: center;
 }
 
 .item2{
-    grid-column: 2 / span 3;
+    display:flex;
+    grid-column: 3 / span 1;
+    justify-content: flex-start; 
+    align-items: center;
+    
 }
+
+.item2-2{
+    display:block;
+    grid-column: 4/ span 1;
+    justify-content: flex-start; 
+    align-items: center;
+    overflow-wrap:break-word;
+    word-wrap:break-word;
+    /* min-width:200px; */
+}
+
+
 
 /* .box-h1h2{ */
     /* border-style:solid;
@@ -187,8 +223,8 @@ span{
     height: 24px;
     
     /*outside text and box*/
-    margin-top:10px;
-    margin-bottom: -10px;
+    /* margin-top:10px;
+    margin-bottom: -10px; */
     margin-left:-10px;
     margin-right:5px;
 
@@ -274,6 +310,10 @@ hr.h1h2{
 
 
 /* Text Decoration */
+.text-decoration-none{
+    text-decoration:none;
+}
+
 .text-decoration-overline{
     text-decoration-line:overline;
     text-decoration-color:rgb(242, 202, 43);
