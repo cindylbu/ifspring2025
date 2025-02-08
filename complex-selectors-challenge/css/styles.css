@@ -1,0 +1,102 @@
+
+/* 1. Set the margin-bottom of the header to 3rem. */
+header{
+    margin-bottom: 3rem;
+}
+
+/* 2. Set the line-height of all paragraphs to 1.6. */
+p{
+    line-height:1.6;
+}
+
+/* 3. Make the font-size of the "See All..." links 0.8em, and make them uppercase. */
+/* <a href="#" class="see-all">See All...</a> */
+a.see-all{
+    text-transform:uppercase;
+}
+
+
+/* 4. Make the font-size of show titles 2.5rem. */
+h1{
+    font-size:2.5rem;
+}
+
+/* 5. Make the section-titles uppercase, and font-size 1rem. */
+h2{
+    font-size:1rem;
+}
+
+/* 6. Make all title fonts light weight. */
+h1,h2,h3,h4,h5,h6{
+    font-weight:300;
+}
+
+/* 7. Make the cast images width:100%;. */
+img{
+    width:100%;
+}
+
+/* 8. Make each castmember element width:25%;. (The element that represents the whole castmember in the list, not just the image.) */
+section.cast > ul > li {
+    width:25%;
+}
+/*can combine 2!*/
+
+/* 9. Add a 1px solid black border above each show — without unintentionally adding borders elsewhere. */
+ul.shows > li::before{
+    content:'';
+    display:block;
+
+    border-top: 1px solid black;
+}
+
+/* section::before{
+    content:"";
+    display: block;
+    background-color: black;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 0;
+} */
+
+
+
+/* 10. Make the navigation tab with the .selected class be bold and black. */
+nav>ul>li.selected{
+    font-weight:700;
+    /* color:black; */ 
+        /*change font color won't chage the color of the link*/
+    a:link{
+        color:black;
+    }
+}
+
+/* 11. Make the castmember labels 0.8rem. */
+section.cast>ul>li>a>div{
+    font-size:0.8rem;
+}
+
+/* 12. Make the actor/actress names bold. */
+section.cast>ul>li>a>div:first-of-type{
+    font-weight:bold;
+}
+
+/* 13. Make the character names italic. */
+section.cast>ul>li>a>div:last-of-type{
+    font-style:italic;
+}
+
+/* 14. Add an asterisk (*) to the last year in the Game of Thrones seasons list. */
+li#game-of-thrones>section.seasons>ul>li:last-of-type::after{
+    content:"*";
+}
+
+
+/* 15. Add the text "* Final Season" on the next line after the Game of Thrones season list. Make it 0.7rem, and color it to be #999. */
+li#game-of-thrones>section.seasons>ul::after{
+    display:block;
+    content:"* Final Season";
+    font-size:0.7rem;
+    color:#999;
+}
