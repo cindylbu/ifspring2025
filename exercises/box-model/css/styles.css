@@ -1,0 +1,39 @@
+.box-layers{
+    background-color: #eeeeee;
+    /* padding: 2rem; */
+    /* border: 10px solid #dddddd; */
+    /* margin: 4rem; */
+    margin: 4rem 0;
+    padding: 2rem 1rem 4rem 1rem;
+    border-top: 10px solid #dddddd;
+}
+
+.h2-wrapper{
+    border: 1px solid black;
+}
+
+.box-sizing-example {
+    background-color: #eeeeee;
+    padding: 2rem;
+    border: 10px solid #dddddd;
+
+    width:100%;
+    /* the box got wider and is now spilling out of the normal page column to the right */
+    /* It turns out that by default, setting the width property tells the browser to make the content-box that width. The browser basically says "Oh, you are controlling width of the content box now? No problem, I'll just add these other layers outside now, instead of shrinking the content box to make room for them."  */
+
+    /* solution: */
+    box-sizing:border-box;
+}
+
+.overflow-example{
+    width: 50%;
+    height: 300px;
+    /* forced the size of the box, and now the content is spilling out! */
+
+    overflow: hidden;
+    /* hides anything that spills past the border box */
+
+    overflow: auto;
+    /* (shudder) make it scroll: */
+    /* a scrolling container */
+}
