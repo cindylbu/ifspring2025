@@ -1,0 +1,19 @@
+.portrait{
+    float: left;
+    margin: 2rem;
+    margin-top:0;
+    margin-left:0;
+}
+/*  The float property is applied to the element around which we want text to wrap.
+    the floated element must come before the text that wraps around it, just like this document
+        float: left;
+        float: right;
+        float: both */
+
+.instructions{
+    clear: both;
+}
+/* tell a subsequent element to 'clear' floated items
+    clear: left
+    clear: right
+    clear: both */
