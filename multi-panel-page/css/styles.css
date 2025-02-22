@@ -1,0 +1,196 @@
+/* <weight>: Use a value from 400 to 700
+<uniquifier>: Use a unique and descriptive class name
+
+.archivo-narrow-<uniquifier> {
+  font-family: "Archivo Narrow", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+html{
+    font-family: "Archivo Narrow", serif;
+}
+
+header{
+    background-color: rgba(255,0,0,.5);
+    /* padding-top:166px;
+    padding-bottom: 188px; */
+    padding: 166px 0 188px 0;
+
+    background-image: url('../images/hot-balloon.jpg');
+    /* ../ >> take us to the upper level */
+    /* gonna look at the css folder, and would not find the image */
+
+    background-size:cover;
+    background-position:center;
+    color: white;
+}
+
+header h1{
+    text-align: center;
+    margin:0 0 16px 0;
+    font-size: 60pt;
+    line-height:1;
+}
+
+header h2{
+    text-align: center;
+    font-size: 30px;
+    line-height:1;
+     margin:0;
+}
+
+h3{
+    margin:0 0 38px 0;
+    text-align: center;
+    font-size: 40px;
+    line-height:1;
+
+    color:rgb(103, 98, 92);
+}
+
+h4{
+    font-size:20px;
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+
+p{
+    font-size:18px;
+    line-height:1.39;
+}
+
+
+
+
+/* Common Screen Size: 1296*696; 1920px */
+/* optimization of image: page load speed (user experience, hit back button) ++ would not be found on Google */
+
+
+section{
+    /* margin 0 0 0 0;
+    padding: 0 0 0 0; */
+    /* if do this, the column and the margin will shrink together, which is not we want */
+
+    /* we want a fixed column and the margin shrink with the viewport */
+
+    /* padding: 48px 0 38px 0; */
+}
+
+/* select a div that is a direct child of its parent 
+section > div{}
+*/
+/* can also do that by <div class="column"> */
+
+section div.column{
+    width: 958px;
+    margin: auto;
+}
+
+
+section#intro{
+    /* background-color: rgba(0,0,255,.3); */
+    padding: 48px 0 38px 0;
+}
+
+section#intro img{
+    width: 400px;
+    height: 300px;
+    float: right;
+    margin: 0 0 32px 40px;
+}
+
+section.photo{
+    /* background-color: rgba(0,0,255,.3); */
+    background-color:rgb(238, 238, 238);
+    padding: 48px 0 42px 0;
+}
+
+section.end{
+    background-color: rgb(198, 219, 219);
+    padding: 48px 0 74px 0;
+}
+
+
+/* section.end p{
+    font-size:25px;
+    text-align: center;
+    width:70%;
+    line-height:1.45;
+} */
+
+section div.column-end{
+    width: 703px;
+    margin: auto;
+    
+}
+
+/* section.div.column-end p{
+    font-size:26px;
+    text-align: center;
+    line-height:1.45;
+} */
+/* margin at the edge of the container will spill out the container
+so would generally not use margin top to add gap above the element
+>> can use padding*/
+
+/* section div.column-end p{
+    font-size:25px;
+    text-align: center;
+    width:70%;
+    line-height:1.45;
+
+} */
+
+section div.column-end p{
+    font-size:26px;
+    text-align:center;
+    line-height:1.4;
+}
+
+
+.grid img{
+    width:200px;
+    height:150px;
+    margin:0 10px 0 0;
+    padding:0;
+}
+
+.grid{
+    padding:0;
+    display: grid;
+    grid-template-columns: 21% 27% 21% 27%;
+    column-gap: 10px;
+    row-gap:19px;
+}
+
+.grid li{
+    display: block;
+    text-align:left;
+    margin:0;
+    padding:0;
+    width:100%;
+
+}
+
+.grid p{
+    width: 83%;
+    margin-top:9px;
+}
+
+/* use flex and grid for grid */
+
+
+
+footer{
+    font-size:18px;
+    padding: 41px 0 41px 87px;
+    /* background-color:aquamarine; */
+}
+
+footer div.column{
+    width: 1047px;
+    margin: auto;
+}
