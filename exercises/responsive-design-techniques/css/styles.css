@@ -1,0 +1,87 @@
+
+body{
+    /*  Center the body on the page no matter how wide the viewport is. */
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Make the <body> of this document be 800px wide and 90% the width of the viewport, whichever is smaller. */
+    width: min(800px, 90vw);
+}
+
+
+
+@media (max-width: 500px){
+    h1{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (min-width: 640px) {
+    html{
+        /* Make the background-color of this document to #eaf6ff when the viewport width is 640px or more. */
+        background-color: #eaf6ff;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+}
+
+section li{
+    display: block;
+}
+/* this will eliminate the bullet point for both grids*/
+
+section#fixed-size-grid-items ul{
+    display: flex;
+    flex-wrap: wrap; 
+    padding-left:0;
+}
+/* initially not putting ul, "section#fixed-size-grid-items" = having the items displaying 1 item/row */
+
+section#fixed-size-grid-items li > aside{
+    width: 170px;
+    margin: 10px;
+}
+
+/* ------- */
+
+section#stretchable-grid-items ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:0;
+    margin: 1rem -10px 1rem -10px;
+}
+
+section#stretchable-grid-items li{
+    width: 100%;
+    
+    /* margin:10px; */
+    /* why it starts to be 3 items/row:
+        Each item now takes 100% + margin, which means there’s less space available for other items.
+        When add margin to <li>, it increases the total space each item takes up.
+        >> fewer items can fit within the available space per row.
+    */
+}
+
+section#stretchable-grid-items li>aside{
+    margin: 10px;
+}
+/* margin on aside only affects inner spacing, not layout; keeps the same number of items per row */
+
+
+
+@media (min-width: 480px){
+    section#stretchable-grid-items li{
+        width: 50%;
+    }
+}
+
+@media (min-width: 640px){
+    section#stretchable-grid-items li{
+        width: 25%;
+    }
+}
+
+

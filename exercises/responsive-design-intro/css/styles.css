@@ -1,0 +1,33 @@
+html { 
+	font-size: 12pt; 
+}
+
+@media (min-width: 640px) {
+    html { 
+        font-size: 16pt; 
+    }
+
+    .two-columns-example{
+        display: flex;
+    }
+    .two-columns-exampples > *{
+        /* This should live inside the same media query. Its job is to select both children of .two-columns-example. */
+        width: 50%;
+    }
+  }
+  
+
+body{
+    margin-left: auto; 
+    margin-right: auto;
+    width: 90%;
+    /* center the body element in the available space */
+
+    max-width: 40rem;
+    /* The max-width property overrules the width property when needed, so our page now has an upper width limit of 40rem for content.  */
+    
+}
+
+img { 
+    max-width: 100%; 
+}
