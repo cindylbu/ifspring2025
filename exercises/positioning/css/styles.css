@@ -1,0 +1,50 @@
+span.highlight{
+    background-color:rgb(255, 251, 205);
+}
+
+
+.static-example .positioned-element{
+    background-color: green;
+    left: 100px;
+}
+
+.relative-example .positioned-element{
+    background-color: lightblue;
+    position: relative;
+    left: 100px;
+    top: 50px;
+
+    z-index: -1;
+}
+
+.absolute-example .positioned-element{
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.absolute-example{
+    position: relative;
+    /* Note that the section itself doesn't change it's position, because relative still follows the document flow. But it does make this section a positioning-parent.… */
+
+}
+
+.fixed-example .positioned-element{
+    background-color: purple;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 9999;
+}
+
+
+
+.sticky-example .positioned-element{
+    background-color: orange;
+    position: sticky;
+    top: 50px;
+}
