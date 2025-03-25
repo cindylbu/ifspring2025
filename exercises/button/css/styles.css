@@ -1,0 +1,154 @@
+span.hl{
+    background-color:rgb(255, 248, 156);
+}
+
+span.hlGrey{
+    background-color:rgb(234, 234, 234);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    /* background: #000; */
+    background: linear-gradient(to bottom, #000000 40%,#0560aa 80%,#7cd4ef 100%);
+}
+
+
+body{
+    padding-top: 200px;
+}
+
+
+.label{
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: white;
+
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+.launch-button:hover .label{
+    color: orange;
+    text-shadow: 0 0 3px rgb(251, 255, 0, 0.5);
+}
+
+.launch-button{
+    position: absolute;
+    left: 50%;
+    top: 75%;
+
+    transform: translate(-50%, -50%);
+    /* (The two numbers correspond to horizontal and vertical.) */
+
+
+    /* Get rid of some default 'link' styles, and add some 'button' styles. */
+    text-decoration: none;
+    background-color: #aa0000;
+    color: white;
+    font-size: 20px;
+    /* padding: 15px 30px; */
+    padding: 15px 60px 15px 30px;
+    border-radius: 10px;
+
+    /* transitioning from one state to the next, instead of just 'jumping' from default to hover to active */
+    transition: transform 0.5s, background-color 0.1s, padding 0.5s, box-shadow 0.1s;
+
+    
+}
+
+
+.launch-button:hover{
+    background-color: #cc0000;
+    box-shadow: 0 0 8px #ff0000;
+}
+
+.launch-button:active{
+    background-color: #750000;
+    box-shadow: 0 0 2px #750000;
+
+    transform: translate(-50%, -20%) scale(0.7);
+
+    padding: 15px 30px
+}
+
+
+/* create icon */
+.launch-button .rocket{
+    position: absolute; 
+    /* This makes it a positioning parent for its descendant elements, in this case, the icons. */
+
+    top:50%;
+    /* Centers the rocket vertically. */
+    right: 40px;
+    /* Positions the rocket 40px from the right edge, in the gap we made. */
+ } 
+
+.launch-button .rocket i{
+    position: absolute;
+    top: 0;
+    left: 0;
+} 
+
+.launch-button .fa-rocket{
+    transform: translate(-50%, -50%) rotate(-45deg);
+    /* This centers the rocket in its container (just like we did the button in the header), and rotates it to point straight up. */
+
+    
+}
+
+.launch-button .fa-burn{
+    transform: translate(-50%, -15%) rotate(180deg) scale(0.1);
+    color: orange;
+}
+/* centers it horizontally, aligning it with the rocket, but leaves it hanging lower vertically, so it's toward the rocket exhaust nozzle. It also rotates it 180°, and makes it smaller. */
+
+.launch-button:hover .fa-burn{
+    /* It's saying "Select elements with the .fa-burn class that are inside of a hovered .launch-button.  */
+    transform: translate(-50%, -15%) rotate(180deg) scale(0.4);
+
+}
+
+.launch-button:active .fa-burn{
+    transform: translate(-50%, 25%) rotate(180deg) scale(0.8);
+}
+
+.launch-button:hover .rocket{
+    transform: scale(1.3);
+}
+
+.launch-button:active .rocket{
+    transform: rotate(-15deg) translate(60px, -140px) scale(3.5);
+}
+
+
+@keyframes burn {
+    from { transform: rotate(-7deg); }
+    33% { transform: rotate(4deg); }
+    66% { transform: rotate(-4deg); }
+    to { transform: rotate(7deg); }
+  }
+
+
+  /* a pseudo-element that is the first child of the selected element. */
+  .launch-button:active .fa-burn::before{
+    display: block;
+    /* not sure why, but needs this to animate. */
+
+    transform-origin: center bottom; 
+    /* "apply the transform around an axis at the base of the flame, not the center of it." */
+
+    animation-name: burn;
+    /* This tells the element that it should use the "burn" keyframes. */
+
+    animation-duration: 0.1s;
+    /* Specifies the time over which a single 'loop' of the keyframes should span. */
+
+    animation-iteration-count: infinite;
+    /* This tells the animation to loop without end (as long as this selector applies). */
+
+    animation-direction: alternate;
+    /* This tells the keyframes to alternate forward and backward in time, 'bouncing' back and forth. */
+  }
