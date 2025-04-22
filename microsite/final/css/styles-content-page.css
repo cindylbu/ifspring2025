@@ -1,0 +1,705 @@
+html{
+    /*SET BASE FONT STYLE*/
+    font-family: "source-sans-3", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13pt;
+    line-height:1.4em;
+    padding:0;
+
+    
+    
+} 
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+
+body{
+  margin:0;
+  padding:0;
+}
+
+main{
+  max-width: 1200px;
+  margin: auto;
+}
+
+/*NAVIGATION BAR CODES START HERE*/
+
+/*Style the logo*/
+#title{
+    font-family: "mrs-eaves", serif;
+    font-size: 1.12em;
+    color:#D2140E;
+} 
+
+
+
+
+/* Style the navbar */
+#navbar {
+    z-index: 9999;  
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color:#F1F1F1;
+    padding:0;
+    margin: 0;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #D8968D;
+    text-align: center;
+    font-weight: 100;
+    padding: 20px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    text-decoration: none;
+  }
+
+#navbar #title{
+    color: #D2140E;
+}
+  
+  #navbar a:hover {
+    color: #D2140E;
+    font-weight: 500;
+  }
+  
+  #navbar a.active {
+    color: #D2140E;
+    font-weight: 500;
+  }
+
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+
+
+  /* Updated code for Responsiveness START HERE*/
+
+#navbar .iconHamburgerBar {
+    display: none;
+  }
+  
+  
+
+  @media (max-width:1024px) {
+  #navbar{
+      font-size: 0.9em;
+    }
+  }
+
+  @media (max-width:768px) {
+    #navbar{
+      font-size: 0.9em;
+    }
+    /* When the screen is less than 768 pixels wide, hide all links except for the first one and the icon */
+    #navbar a:not(:first-child) {display: none;}
+    #navbar a.iconHamburgerBar {
+      float: right;
+      display: block;
+    }
+  }
+
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media (max-width: 768px) {
+    #navbar.topnav.responsive {
+      position: relative;
+    }
+    #navbar.topnav.responsive a.iconHamburgerBar {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    #navbar.topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 600px){
+    #navbar{
+      font-size:0.8em;
+    }
+  }
+  
+  
+  /*PROGRESS BAR CODE STARTS HERE*/
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 5px;
+  background: #D2140E;
+  width: 0%;
+}
+
+
+  /*FLOATING MENU CODE STARTS HERE*/
+  .floating-menu {
+    background: #D2140E;
+    
+    
+    width: 180px;
+    z-index: 999;
+    position: fixed;
+    bottom:10vh;
+    /* right:3vw; */
+    right: 0;
+
+    padding:5px;
+    padding-top:15px;
+    padding-bottom:20px;
+  }
+
+
+
+  .floating-menu h4{
+    font-size:15pt;
+    
+    margin-top: 8px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+    margin-bottom:0.5em;
+    display: block;
+    color: white;
+  }
+
+  .floating-menu a{
+    margin: 0 15px;
+    margin-top:0.4em;
+    margin-bottom:0.4em;
+    display: block;
+    color: white;
+    font-size:12pt;
+    line-height:1.3em;
+  }
+
+  .floating-menu a.top{
+    text-decoration:none;
+    font-style:italic;
+    margin-top: 0.8em;
+  }
+
+  .floating-menu .iconPageNav {
+    display: none;
+    font-size:10pt;
+  }
+
+  .floating-menu .closeMenu {
+    display: none;
+    color: white;
+    font-size:13pt;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+
+
+  @media screen and (max-width: 1024px) {
+    .floating-menu{
+      width: 140px;
+      padding-top:12px;
+      padding-bottom:12px;
+    }
+    .floating-menu h3{
+      font-size:12pt;
+    }
+    .floating-menu a{
+      font-size:9pt;
+      
+    }
+  }
+
+
+  @media screen and (max-width: 760px) {
+    .floating-menu{
+      width: 110px;
+      padding-top:20px;
+      padding-bottom:12px;
+      
+    }
+    /* .floating-menu h4{
+      font-size:10pt;
+    } */
+    .floating-menu a{
+      font-size:9pt;
+    }
+  }
+
+
+  
+
+  @media screen and (max-width: 760px){
+    .floating-menu {
+        font-size: 0.9em;
+        width:30px;
+        padding:8px;
+        padding-left:0px;
+        
+      }
+
+      .floating-menu:hover {
+        background:#c2c2c2;
+      }
+      
+      /* .floating-menu.active {
+        background:#c2c2c2;
+        color:#D2140E;
+       
+      } */
+
+
+      .floating-menu a.iconPageNav:active {
+        background: #dadada;
+      }
+
+
+
+      .floating-menu h4{display:none}
+      .floating-menu a {display: none;}
+      .floating-menu a.iconPageNav {
+        display: block;
+      }
+
+      .floating-menu .closeMenu {
+        display: none;
+      }
+  }
+  
+
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media (max-width: 760px) {
+
+    .floating-menu.responsive .closeMenu {
+      display: block;
+    }
+  
+
+    .floating-menu.responsive {
+      width: 140px;
+      padding: 20px;
+      background: #D2140E;
+    }
+
+    .floating-menu.responsive a.iconPageNav {
+      display: none;
+    }
+    .floating-menu.responsive h4 {
+      display: block;
+    }
+  
+    .floating-menu.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+
+  /* TODO: Need the responsiveness for mobile into a circular button sticky */
+
+  /*BOX*/
+
+  .box{
+    border-style:none;
+    /* border-radius:5px; */
+    background-color:rgb(230, 230, 230);
+    color:black;
+    padding:20px;
+
+    margin: max(5vw,40px);
+    margin-top:2vw;
+    margin-bottom:3vh;
+
+    
+
+    align-items: center;
+
+}
+
+.box p{
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+
+hr{
+  margin-top: 5vh;
+  margin-left: max(5vw, 40px);
+  margin-right: max(5vw, 40px);
+}
+
+
+h1{
+    margin-top: 5vh;
+    margin-left: max(5vw, 40px);
+    margin-right: max(5vw, 40px);
+    margin-bottom: 4vh;
+    color:#D2140E;
+    font-family: "mrs-eaves", serif;
+    font-size:1.4 em;
+}
+
+h2{
+  color:#D2140E;
+  margin-left: max(5vw, 40px);
+    margin-right: max(5vw, 40px);
+    
+    /* margin-top:2.5em; */
+    margin-top:4vh;
+    margin-bottom: 0;
+    font-family: "mrs-eaves", serif;
+    font-size:1.5em;
+    
+}
+
+h2.first{
+  margin-top: 5vh;
+}
+
+h2 button.collapsible {
+  color:#D2140E;
+  font-family: "mrs-eaves", serif;
+  font-family: "mrs-eaves", serif;
+    font-size:1em;
+    font-weight:700;
+  
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #e8e8e8;
+  color:#D2140E;
+  font-family: "mrs-eaves", serif;
+  font-family: "mrs-eaves", serif;
+    font-size:1em;
+  
+  /* color: #444; */
+  cursor: pointer;
+  padding: 15px;
+  padding-left:20px;
+  padding-right:20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  /* font-size: 15px; */
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.collapsible-active, .collapsible:hover {
+  background-color: #e8e8e8;
+}
+
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 0.7em;
+  color: white;
+  float: right;
+  margin-top: 3px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.collapsible-active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collContent {
+  /* padding: 0 22px; */
+  /* padding-left: max(0.8vw,8px);
+  padding-right: max(0.8vw,8px); */
+  padding-top: 2vh;
+  padding-bottom: 4vh;
+  margin-left: max(5vw, 40px);
+  margin-right: max(5vw, 40px);
+  display: none;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+
+h3{
+  margin-left: max(5vw, 40px);
+    margin-right: max(5vw, 40px);
+    font-family: "mrs-eaves", serif;
+    font-size:1.3em;
+    margin-top:1.6em;
+    margin-bottom: 0.6em;
+
+}
+
+h3:first-of-type {
+  margin-top: 0.8em;
+}
+
+
+
+h4{
+  font-family: "mrs-eaves", serif;
+  font-size:1.1em;
+}
+
+p{
+  margin-left: max(5vw, 40px);
+    margin-right: max(5vw, 40px);
+    font-size:0.95em;
+    margin-top: 0.5em;
+    
+}
+
+ul{
+    margin-left: 4.5vw;
+    margin-right: max(5vw, 40px);
+    
+}
+
+li{
+  font-size:0.95em;
+}
+
+@media screen and (max-width:1024px){
+  
+  html{
+    line-height:1.3em;
+  }
+  h1{
+    font-size:1.8em;
+  }
+  h2{
+    font-size:1.4em;
+    margin-top:4vh;
+  }
+
+  h2.first{
+    margin-top:1.6vh;
+  }
+  h3{
+    font-size:1.2em;
+  }
+
+
+  h4{
+    font-size:1em;
+  }
+
+  p{
+    font-size:0.85em;
+    
+  }
+  li{
+    font-size:0.85em;
+  }
+
+  hr{
+    margin-top:4vh;
+
+  }
+}
+
+
+@media screen and (max-width:768px){
+ 
+  html{
+    line-height:1.2em;
+  }
+  h1{
+    font-size:1.6em;
+  }
+  h2{
+    font-size:1.3em;
+    margin-top:4vh;
+  }
+
+  h2.first{
+    margin-top:1.6vh;
+  }
+  h3{
+    font-size:1em;
+  }
+
+
+  h4{
+    font-size:0.9em;
+  }
+
+  p{
+    font-size:0.75em;
+  }
+  li{
+    font-size:0.75em;
+  }
+
+  hr{
+    margin-top:4vh;
+
+  }
+}
+
+@media screen and (max-width:414px){
+  html{
+    line-height: 1.1em;
+  }
+  h2{
+    margin-top:3vh;
+  }
+
+  ul{
+    margin-left:0.8vw;
+  }
+
+  hr{
+    margin-top:3vh;
+  }
+
+}
+
+
+
+/* <section class="box"> */
+
+
+img.float {
+  float: right;
+  padding:4%;
+  padding-top:0px;
+  padding-right:0px;
+  /* margin-top: 63px; */
+  margin-top:6vh;
+  margin-right:5vw;
+
+  width:25%;
+  max-width: 250px;
+
+}
+@media screen and (max-width:414px){
+  img.float {
+    float:none;
+    /* margin-left: max(5vw, 40px);
+    margin-right: max(5vw, 40px); */
+    margin-left:auto;
+    margin-right:auto;
+
+    width: 50%;
+    max-width: 100%;
+    
+    margin-top:2vh;
+    margin-bottom: 3vh;
+ 
+    padding:0;
+    display:block;
+  }
+    
+}
+
+
+footer{
+  background-color:#D2140E;
+  color:white;
+  margin-top:6vh;
+  padding-top:1vh;
+  /* padding-bottom: 3%; */
+  padding-bottom: 4.5vh;
+  
+  
+  
+}
+
+footer p{
+  /* margin-top:10px; */
+  margin-bottom:10px;
+  font-style:italic;
+}
+
+#footer-toc{
+  /* margin-top:20px; */
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: column;
+  margin-left: max(5vw, 40px);
+  margin-right: max(5vw, 40px);
+  margin-bottom:20px;
+  line-height:1.7em;
+}
+
+
+#footer-toc a {
+  color: #D8968D;
+  text-decoration: none;
+  
+}
+
+
+
+#footer-toc a:hover {
+  color: white;
+  font-weight: 500;
+}
+
+#footer-toc a.active {
+  color: white;
+  font-weight: 500;
+}
+
+/* Page content */
+.pageContent {
+  padding: 16px;
+}
+
+
+footer h4{
+  /* border-top: solid white 2px; */
+  margin-left: max(5vw, 40px);
+  margin-right:5vw;
+  /* margin-top:25px; */
+  margin-bottom:5px;
+  padding:0;
+  padding-top:20px;
+}
+
+footer hr{
+  
+  border-top: solid white 1.5px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+#footer-toc a{
+  @media screen and (max-width:1024px){
+    font-size:0.8em;
+    line-height:2.3em;
+  }
+  @media screen and (max-width:768px){
+    font-size:0.75em;
+    line-height:2em;
+  }
+
+  @media screen and (max-width:414px){
+    font-size:0.7em;
+    line-height:1.8em;
+  }
+
+
+
+}
+
+

@@ -1,0 +1,276 @@
+html{
+    /* background: rgb(206,1,1);
+    background: radial-gradient( circle at top left, rgba(206,1,1,1) 10%, rgba(224,96,68,1) 40%); */
+
+    /*SETTING THE BACKGROUND GRADIENT*/
+
+
+    height:100%;
+    
+  ;
+
+  /* background: linear-gradient(to bottom right,  #CE0101,#E06044); */
+
+  margin: 0;
+  padding: 0;
+
+       /*SET BASE FONT STYLE*/
+       font-family: "source-sans-3", sans-serif;
+       font-weight: 400;
+       font-style: normal;
+       font-size: 13pt;
+      
+}
+
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+body{
+  margin:0;
+  padding:0;
+
+  background-image: radial-gradient(
+    farthest-corner at 10% 10%,
+    #E06044 0%,
+    #CE0101 60%);
+  height:100%
+}
+
+
+
+/*FOR TITLE*/
+
+h1{
+    font-family: "mrs-eaves", serif;
+    font-weight: 400;
+    font-size: 40pt;
+    font-style: normal;
+
+    color:#F2DCD9;
+
+    margin-top: 30vh;
+    margin-left: 10vw;
+    padding:0;
+    margin-bottom:0;
+}
+
+
+/*FOR SUBTITLE*/
+h2{
+    font-family: "mrs-eaves", serif;
+    font-weight: 400;
+    font-size: 20pt;
+    font-style: italic;
+
+    color:#F2DCD9;
+
+    padding: 0;
+    margin-top: 1.5vh;
+    margin-left: 10vw;
+
+}
+
+@media screen and (max-width: 768px){
+  h1{
+    font-size:34pt;
+  }
+  h2{
+    font-size:18pt;
+  }
+}
+
+@media screen and (max-width: 600px){
+  h1{
+    font-size:25pt;
+  }
+  h2{
+    font-size:16pt;
+  }
+}
+
+
+/*NAVIGATION BAR CODES START HERE*/
+
+/*Style the logo*/
+#title{
+    font-family: "mrs-eaves", serif;
+    font-size: 1.12em;
+    color:#F2DCD9
+} 
+
+
+
+
+
+/* Style the navbar */
+#navbar {
+  z-index: 9999;  
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color:none;
+  padding:0;
+  margin: 0;
+}
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #D8968D;
+    text-align: center;
+    font-weight: 100;
+    padding: 20px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    text-decoration: none;
+  }
+  
+  #navbar a:hover {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+  }
+  
+  #navbar a.active {
+    color: white;
+    font-weight: 500;
+  }
+
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+
+  /* .icon{
+    margin-right: 20px;
+  } */
+
+   /* Updated code for Responsiveness START HERE*/
+
+#navbar .iconHamburgerBar {
+  display: none;
+}
+
+
+
+@media (max-width:1024px) {
+#navbar{
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width:768px) {
+  #navbar{
+    font-size: 0.9em;
+  }
+  /* When the screen is less than 768 pixels wide, hide all links except for the first one and the icon */
+  #navbar a:not(:first-child) {display: none;}
+  #navbar a.iconHamburgerBar {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media (max-width: 768px) {
+  #navbar.topnav.responsive {
+    position: relative;
+  }
+  #navbar.topnav.responsive a.iconHamburgerBar {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #navbar.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px){
+  #navbar{
+    font-size:0.8em;
+  }
+}
+
+
+
+
+/*BUTTON CODE START HERE*/
+
+a#btn_begin {
+    display: inline-block;
+
+    position: fixed;
+    bottom: 5vh;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
+    color:#F2DCD9;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    line-height:1.8em;
+}
+
+#btn_begin .spinner {
+  display: none;
+
+  margin: 0 auto;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #E06044;
+;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+  
+}
+
+#btn_begin:hover .btn-text {
+  display: none;
+}
+
+
+#btn_begin:hover .spinner {
+  display: inline-block;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+
+  
+}
+
+
+/* a#btn_begin:hover {
+    color:white;
+    bottom: 6vh;
+}
+
+a#btn_begin:active {
+    color:white;
+} */
+
+
+
+@media screen and (max-width: 768px){
+  a#btn_begin {
+    font-size:16px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  a#btn_begin {
+    font-size:13px;
+  }
+}
+
