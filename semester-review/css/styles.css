@@ -1,0 +1,185 @@
+
+body{
+    font-family: "raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 5% 4% 5% 4%;
+    
+    background-color:rgba(228, 227, 222, 0.635);
+    color: #393939;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color:#777777;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+h3{
+    margin-bottom: 20px; 
+    text-decoration:solid;
+    /* border-bottom: solid 1px #39393976; */
+    /* padding-bottom: 20px; */
+}
+
+p{
+   
+    font-size: 14px;
+    line-height: 1.6em;
+}
+
+p span{
+    /* font-weight:600;
+    font-style: italic; */
+    color:#aa7e39;
+}
+
+section {
+	max-width: 2400px;
+	padding: 0 30px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.portfolio_item {
+	box-sizing: border-box;
+	padding: 30px 30px 30px 30px;
+
+    background-color:rgba(255, 255, 255, 0.635);
+
+    /*33% of the max-width of section, 20px = column gap (gutter)*/
+	width: calc(33% - 20px);
+	
+    /*all CSS properties of this element smoothly animate over a duration of 0.4 seconds*/
+	transition: all .4s;
+	
+    text-decoration: none;
+	color: #393939;
+
+
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+	vertical-align: top;
+}
+
+.portfolio_item:hover {
+
+	box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.348);
+    /* box-shadow: 0px 5px 20px 0px rgba(150, 0, 0, 0.348); */
+    width: calc(33% - 10px);
+
+    h3{
+        color: #b64b36;
+    }
+}
+
+.portfolio_image {
+   
+    aspect-ratio:593 / 426;
+	width: 100%;
+	
+	margin-bottom: 18px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: none;
+}
+
+
+
+footer {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 80px 30px 30px 30px;
+	text-align: center;
+	font-size: 1rem;
+    
+}
+
+footer a{
+    color:#b64b36;
+}
+
+footer a:hover{
+    color: #dc5b41;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Creates equal spacing between icons */
+  }
+
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    font-size:0.8em;
+    background-color: rgba(0, 0, 0, 0.715);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text*/
+    position: absolute;
+    bottom: -30px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%); 
+  }
+  
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+@media screen and (max-width: 1000px) {
+	.portfolio_item {
+		width: calc(50% - 20px);
+		margin-bottom: 50px;
+	}
+
+    .portfolio_item:hover {
+        width: calc(50% - 8px);
+		margin-bottom: 50px;
+    }
+
+
+	footer {
+		position: relative;
+		bottom: auto;
+		left: auto;
+		right: auto;
+		padding: 60px 30px 30px 30px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.portfolio_item {
+		display: block;
+        margin: auto;
+		width: 90%;
+		margin-bottom: 50px;
+    }
+
+    .portfolio_item:hover {
+        width: 95%;
+    }
+    
+}
