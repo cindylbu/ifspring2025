@@ -8,6 +8,18 @@ html{
     font-size:11pt;
 }
 
+body{
+    margin:0;
+}
+
+hr {
+
+    border: none;
+    height: 1px;
+    background-color: #ccc; /* or #b64b36 or any visible color */
+    margin: 40px 0; /* spacing above and below */
+    width: 100%;
+  }
 
 header{
     margin: 0;
@@ -15,13 +27,21 @@ header{
     /* background-color: #eeeeee; */
 } 
 
+.start {
+    height: 100vh;
+    overflow-y: auto; /* if content overflows on small screens */
+}
+
 .title{
     background-color: white;
+   
     text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .title h1 > a{
-    color: #a10000;
+    color: #333;
     
 
     font-family: "kepler-std", serif;
@@ -32,11 +52,14 @@ header{
     text-align: center;
     text-decoration: none;
 
-    margin-top: 3px;
-    margin-bottom: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+   
 }
 
-
+.title a:hover{
+    color:#ebb615;
+}
 
 
 
@@ -54,7 +77,7 @@ header{
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 12px 12px;
+    padding: 10px 10px;
     text-decoration: none;
     font-size: 1em;
   }
@@ -229,7 +252,8 @@ h3{
 
 h4{
     /* margin-top:1rem; */
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    margin-bottom:0;
     margin-top:0;
 }
 
@@ -249,23 +273,83 @@ section.intro{
     /* background-color:#f2f2f2; */
     margin:0;
     padding:2%;
+    
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 1%;
+    gap: 3%;
+    
+    height: auto;
+
+    
 }
 
 .gyudonIntro{
     flex:1;
-    height:40%;
+    
+    /* height:40%; */
+    align-self: stretch;
+    /* padding: 10px; */
+    padding:25px 40px;
+    border-radius:5px;
+
+    background-color: #f2f2f2;
 }
 
 .beforeStart{
     flex:1;
-    height:40%;
+    
+    /* height:40%; */
+    align-self: stretch;
+    /* padding: 10px; */
+    padding:25px 40px;
+    border-radius:5px;
+
+    background-color: #f2f2f2;
 }
+
+.beforeStartChild{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+
+    flex: 1;
+    align-self: stretch;
+    gap: 1%;
+    
+}
+
+
+.dietryLim{
+    flex: 1;
+    
+}
+
+.equipmentsNeed{
+    flex: 1;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    /* .box{
+        margin-bottom: 3%;
+    } */
+    .gyudonIntro,.beforeStart{
+       
+        flex: 100%;
+        margin:5%;
+    }
+    section.intro{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
 
 /* @media screen and (max-width: 900px) {
     .gyudonIntro,.beforeStart{
@@ -276,7 +360,7 @@ section.intro{
     }
 } */
     
-.beforeStartChild{
+/* .beforeStartChild{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -290,13 +374,13 @@ section.intro{
 
 .equipmentsNeed{
     flex: 1;
-}
+} */
 
-
+/* 
 .box{
     border-style:none;
     border-radius:5px;
-    background-color:rgb(242, 242, 242);
+    /* background-color:rgb(242, 242, 242); 
     color:black;
     padding:5%;
     margin-top:0.05%;
@@ -304,7 +388,7 @@ section.intro{
 
 
     height: 240px;
-}
+} */
 
 
 
@@ -375,24 +459,7 @@ ul{
 }
 
     
-.beforeStartChild{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1%;
-}
 
-
-
-
-.dietryLim{
-    flex: 1;
-}
-
-.equipmentsNeed{
-    flex: 1;
-}
 
 .boxBlack{
     border-style:none;
@@ -404,18 +471,7 @@ ul{
     margin-bottom:0.05%;
 }
 
-@media screen and (max-width: 900px) {
 
-    .box{
-        margin-bottom: 3%;
-    }
-    .gyudonIntro,.beforeStart{
-        flex: 100%;
-    }
-    section.intro{
-        flex-direction: column;
-    }
-}
 /* 
 section.ingredientsAndInstructions{
     margin:0;
@@ -457,6 +513,7 @@ section.ingredientsAndInstructions{
     /* background-color:#f2f2f2; */
     margin:0;
     padding:2%;
+    padding-bottom: 6%;
 
     display: flex;
     flex-direction: row;
@@ -484,6 +541,7 @@ section.ingredientsAndInstructions{
         flex: 100%;
     }
     section.ingredientsAndInstructions{
+        
         flex-direction: column;
         gap: 5%;
     }
@@ -494,6 +552,11 @@ section.ingredientsAndInstructions{
 
     .instructions{
         padding: 5%;
+    }
+
+    .h4-span {
+        display: block; /* Makes sure "To Cook" has its own space */
+        margin-bottom: 15px; /* Adds spacing below */
     }
 }
 
@@ -566,7 +629,7 @@ img{
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap:8%;
-    row-gap:3%;
+    row-gap:15px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -574,7 +637,7 @@ img{
         display: inline-grid;
         grid-template-columns: 1fr 1fr;
         column-gap:8%;
-        row-gap:3%;
+        row-gap:15px;
     }   
 }
 
@@ -597,8 +660,8 @@ figure{
 .toPrepareTheIngredients, .toCook, .toStore, .toServe {
     display: block;
     /* padding: 20px; */
-    margin-top: 30px; /* Increase spacing between sections */
-    margin-bottom: 30px;
+    /* margin-top: 25px; Increase spacing between sections */
+    /* margin-bottom: 30px; */
     clear: both; /* Ensures sections don’t overlap */
 }
 
